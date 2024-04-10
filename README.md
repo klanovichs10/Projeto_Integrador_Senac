@@ -1,5 +1,5 @@
 # Projeto_Integrador_Senac
-IMPLEMENTAÇÃO BANCO DE DADOS PARA MERCADO - SQL SERVER, COM MANAGEMENT STUDIO. 
+IMPLEMENTAÇÃO BANCO DE DADOS PARA MERCADO  -  SQL SERVER, COM MANAGEMENT STUDIO. 
 
 RESUMO DOS DOIS PROJETOS:
 Nesse meu primeiro projeto(Trigger de Auditoria) faço o cadastro de todos produtos de um mercado, bem como as atualizações e exclusões necessárias do dia-a-dia. Nesse projeto em especial, minha proposta foi a criação de uma Trigger/Gatilho que é disparado automaticamente toda vez que em funcionário fizer uma alteração no campo "PREÇO" da tabela "PRODUTO", ou seja,  ele alimenta uma tabela que está dentro do banco "DIRETORIA" alertando que houve alteração em preços, para que o gerente tenha conhecimento de tal. Outros tipos de alterações 'não relevantes' são processadas normalmente, porém não são alimentadas no banco "DIRETORIA". 
