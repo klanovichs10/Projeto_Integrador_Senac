@@ -38,7 +38,7 @@ CREATE TABLE HIST_PRODUTOS(
 )
 GO
 
-/* FAZENDO AS INSERÇÕES */
+/* FAZENDO AS INSERÇÕES - TABELA PRODUTOS*/
 
 INSERT INTO PRODUTOS (ID_PRODUTO, NOME_DESCRICAO, MARCA, PRECO, DATA_FABRICACAO, VALIDADE, ID_CATEGORIA)
 VALUES
@@ -50,8 +50,26 @@ VALUES
 	(60,'Desinfetante', 'Pinho Sol', 12.90, 'Jun/23' , 'Jun/24',20),
 	(70,'Shampoo', 'Loréal', 19.75, 'Out/23' , 'Out/24',30),
 	(80,'Vinho Tinto Seco', 'Terra Vega', 24.90, 'Nov/22' , 'Indeterminada',40),
-	(90,'Wyski', 'Red Label', 109.90, 'Nov/23' , 'Indeterminada',40)	
+	(90,'Wyski', 'Red Label', 109.90, 'Nov/23' , 'Indeterminada',40),	
+	(100,'Coxão Mole', 'Friboi', 29.90, 'Abr/24' , 'Indeterminada',60),	
+	(110,'Cenoura', 'Hortifruty', 3.90, 'Abr/24' , 'Indeterminada',50)	
 GO
+
+/* FAZENDO AS INSERÇÕES - TABELA DAS CATEGORIAS*/
+
+INSERT INTO TAB_CATEGORIA (ID_CATEGORIA, NOME_CATEGORIA)
+VALUES 
+
+(10, 'Primeira Necessidade'),
+(20, 'Produtos Limpeza'),
+(30, 'Higiene Pessoal'),
+(40, 'Bebidas Alcoólicas'),
+(50, 'Verduras em Geral'),
+(60, 'Açougue - Bovinos'),
+(70, 'Açougue - Suínos'),
+(80, 'Açougue - Avinos')
+GO
+	
 
 /* CRIANDO O GATILHO DE BACKUP */
 
